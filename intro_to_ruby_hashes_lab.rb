@@ -10,8 +10,8 @@ end
 def monopoly
 	monopoly = {}
   monopoly[:railroads] = {}
-  puts "monopoly[:railroads]: #{monopoly[:railroads]}"
-  puts "monopoly: #{monopoly}"
+  puts "monopoly[railroads]: #{monopoly}"
+  monopoly
 end
 
 def monopoly_with_second_tier
@@ -23,6 +23,7 @@ def monopoly_with_second_tier
     :names => {},
     :rent_in_dollars => {}
   }
+  monopoly
 end
 
 def monopoly_with_third_tier
@@ -46,6 +47,7 @@ def monopoly_with_third_tier
     :b_and_o_railroad => {},
     :shortline => {}
   }
+  monopoly
 end
 
 def monopoly_with_fourth_tier
@@ -82,4 +84,5 @@ def monopoly_with_fourth_tier
   monopoly[:railroads][:names][:shortline] = {
     "mortgage_value" => "$800"
   }
+  monopoly
 end
