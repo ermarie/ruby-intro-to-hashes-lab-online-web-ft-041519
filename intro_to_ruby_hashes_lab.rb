@@ -10,6 +10,8 @@ end
 def monopoly
 	monopoly = {}
   monopoly[:railroads] = {}
+  puts "monopoly[:railroads]: #{monopoly[:railroads]}"
+  puts "monopoly: #{monopoly}"
 end
 
 def monopoly_with_second_tier
